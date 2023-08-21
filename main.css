@@ -1,0 +1,61 @@
+
+/* Dette er css variabler*/
+:root {
+--firstcolor: lightgrey;
+--secondcolor: rgba(61, 58, 58, 0.678);
+--thirdcolor: white;
+}
+
+/*Selve "kroppen" til HTML dokumentet. Det
+definerer hovedinnholdet på en HTML-side*/
+body {
+    background: var(--firstcolor);
+    color: var(--thirdcolor);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+
+/* Denne gjelder for alle HTML-elementer. 
+hadde jeg feks skrevet padding: 0; så ville
+det fjernet all innvendig padding i alle elementene.*/
+* {
+    box-sizing: border-box;
+    margin:auto;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+/*Hele diven som inneholder timer og startstopreset*/
+.stopWatch {
+background: var(--secondcolor);
+text-align: center;
+width: 100%;
+max-width: 600px;
+padding: 10px;
+border-radius: 40px;
+}
+
+/*Telleren som viser 00:00:00*/
+.timer {
+font-size: 100px;
+font-weight: lighter;
+margin-bottom: 20px;
+}
+
+/*Hele div'en for knappene*/
+.startstopreset {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+/*Selve knappene*/
+.start, .stop, .reset {
+    background: var(--secondcolor);
+    color: var(--thirdcolor);
+    font-size: 30px  
+}
+
